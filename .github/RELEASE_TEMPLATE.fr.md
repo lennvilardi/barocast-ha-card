@@ -11,7 +11,7 @@
 
 ### Notes de mise à jour
 - Vider le cache du navigateur après mise à jour de la carte.
-- Changement majeur : les IDs capteurs par défaut utilisent désormais `sensor.barocast_forecast*` (remplacer `sensor.local_forecast*` dans la config de carte).
+- Les IDs capteurs par défaut utilisent `sensor.barocast_forecast*`.
 
 ### Liens
 - Documentation carte : `README.md`

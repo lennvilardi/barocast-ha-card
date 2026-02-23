@@ -2,20 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.2.0] - 2026-02-23
-### Changed
-- Breaking: default card entity IDs renamed to `sensor.barocast_forecast*`.
-- Card README examples updated to the new sensor namespace.
-
-### Migration
-- Update card config fields (`entity`, `detail_entity`, `pressure_change_entity`) if still using `sensor.local_forecast*`.
-
 ## [0.1.0] - 2026-02-20
 ### Added
 - Initial HACS dashboard card: `barocast-ha-card`.
 - Defensive rendering for startup/unavailable sensor states.
 - Gradient-based polished visual layout for forecast summary.
 - Compatibility with `sensor.barocast_forecast` and detail sensors.
+- Default card entity IDs use the `sensor.barocast_forecast*` namespace.
+- README examples aligned with the Barocast sensor namespace.
 - Bilingual documentation (EN/FR).
 
 ### Fixed
@@ -28,20 +22,14 @@ All notable changes to this project will be documented in this file.
 
 Toutes les modifications notables de ce projet sont documentées dans ce fichier.
 
-## [0.2.0] - 2026-02-23
-### Modifications
-- Changement majeur : IDs d’entités par défaut renommés vers `sensor.barocast_forecast*`.
-- Exemples du README mis à jour avec le nouvel espace de noms capteurs.
-
-### Migration
-- Mettre à jour les champs de configuration de la carte (`entity`, `detail_entity`, `pressure_change_entity`) si `sensor.local_forecast*` est encore utilisé.
-
 ## [0.1.0] - 2026-02-20
 ### Ajouts
 - Première carte dashboard HACS : `barocast-ha-card`.
 - Rendu robuste face aux états indisponibles au démarrage.
 - Mise en page visuelle améliorée (dégradés + synthèse prévision).
 - Compatibilité avec `sensor.barocast_forecast` et capteurs de détail.
+- Les IDs d’entités par défaut utilisent l’espace `sensor.barocast_forecast*`.
+- Les exemples README sont alignés avec le nouvel espace de noms capteurs.
 - Documentation bilingue (EN/FR).
 
 ### Corrections
