@@ -11,6 +11,7 @@
 
 ### Upgrade notes
 - Clear browser cache after updating the card.
+- Breaking: default sensor IDs now use `sensor.barocast_forecast*` (replace old `sensor.local_forecast*` in card config).
 
 ### Links
 - Card docs: `README.md`

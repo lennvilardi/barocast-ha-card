@@ -1,20 +1,20 @@
 class BarocastHACard extends HTMLElement {
   static getStubConfig() {
     return {
-      entity: "sensor.local_forecast",
-      detail_entity: "sensor.local_forecast_zambretti_detail",
-      pressure_change_entity: "sensor.local_forecast_pressurechange",
+      entity: "sensor.barocast_forecast",
+      detail_entity: "sensor.barocast_forecast_zambretti_detail",
+      pressure_change_entity: "sensor.barocast_forecast_pressure_change",
       icon_now: "mdi:weather-cloudy-clock"
     };
   }
 
   setConfig(config) {
     if (!config || !config.entity) {
-      throw new Error("You need to define an entity (e.g. sensor.local_forecast)");
+      throw new Error("You need to define an entity (e.g. sensor.barocast_forecast)");
     }
     this._config = {
-      detail_entity: "sensor.local_forecast_zambretti_detail",
-      pressure_change_entity: "sensor.local_forecast_pressurechange",
+      detail_entity: "sensor.barocast_forecast_zambretti_detail",
+      pressure_change_entity: "sensor.barocast_forecast_pressure_change",
       icon_now: "mdi:weather-cloudy-clock",
       ...config
     };

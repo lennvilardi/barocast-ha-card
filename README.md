@@ -2,6 +2,10 @@
 
 Custom Lovelace card for the **Barocast HA** integration.
 
+## Breaking change (sensor IDs)
+- Default entity IDs are now in the `sensor.barocast_forecast*` namespace.
+- Update existing card configs if they still reference `sensor.local_forecast*`.
+
 ## Features
 - Clear 3-block layout: now / next slot / later slot
 - Forecast text, pressure trend and rain probabilities
@@ -12,9 +16,9 @@ Custom Lovelace card for the **Barocast HA** integration.
 ## Requirements
 - Home Assistant
 - Integration sensors:
-  - `sensor.local_forecast`
-  - `sensor.local_forecast_zambretti_detail`
-  - `sensor.local_forecast_pressurechange`
+  - `sensor.barocast_forecast`
+  - `sensor.barocast_forecast_zambretti_detail`
+  - `sensor.barocast_forecast_pressure_change`
 
 ## Installation with HACS
 1. HACS → menu (⋮) → **Custom repositories**.
@@ -27,18 +31,18 @@ Custom Lovelace card for the **Barocast HA** integration.
 
 ```yaml
 type: custom:barocast-ha-card
-entity: sensor.local_forecast
-detail_entity: sensor.local_forecast_zambretti_detail
-pressure_change_entity: sensor.local_forecast_pressurechange
+entity: sensor.barocast_forecast
+detail_entity: sensor.barocast_forecast_zambretti_detail
+pressure_change_entity: sensor.barocast_forecast_pressure_change
 ```
 
 ## Optional configuration
 
 ```yaml
 type: custom:barocast-ha-card
-entity: sensor.local_forecast
-detail_entity: sensor.local_forecast_zambretti_detail
-pressure_change_entity: sensor.local_forecast_pressurechange
+entity: sensor.barocast_forecast
+detail_entity: sensor.barocast_forecast_zambretti_detail
+pressure_change_entity: sensor.barocast_forecast_pressure_change
 icon_now: mdi:weather-cloudy-clock
 ```
 
@@ -52,6 +56,10 @@ icon_now: mdi:weather-cloudy-clock
 
 Carte Lovelace custom pour l’intégration **Barocast HA**.
 
+## Changement majeur (IDs capteurs)
+- Les IDs d’entités par défaut sont désormais dans l’espace `sensor.barocast_forecast*`.
+- Mets à jour les configurations de carte existantes si elles référencent encore `sensor.local_forecast*`.
+
 ## Fonctionnalités
 - Mise en page claire en 3 blocs : maintenant / prochain créneau / créneau suivant
 - Texte de prévision, tendance de pression et probabilités de pluie
@@ -62,9 +70,9 @@ Carte Lovelace custom pour l’intégration **Barocast HA**.
 ## Prérequis
 - Home Assistant
 - Capteurs de l’intégration :
-  - `sensor.local_forecast`
-  - `sensor.local_forecast_zambretti_detail`
-  - `sensor.local_forecast_pressurechange`
+  - `sensor.barocast_forecast`
+  - `sensor.barocast_forecast_zambretti_detail`
+  - `sensor.barocast_forecast_pressure_change`
 
 ## Installation via HACS
 1. HACS → menu (⋮) → **Dépôts personnalisés**.
@@ -77,18 +85,18 @@ Carte Lovelace custom pour l’intégration **Barocast HA**.
 
 ```yaml
 type: custom:barocast-ha-card
-entity: sensor.local_forecast
-detail_entity: sensor.local_forecast_zambretti_detail
-pressure_change_entity: sensor.local_forecast_pressurechange
+entity: sensor.barocast_forecast
+detail_entity: sensor.barocast_forecast_zambretti_detail
+pressure_change_entity: sensor.barocast_forecast_pressure_change
 ```
 
 ## Configuration optionnelle
 
 ```yaml
 type: custom:barocast-ha-card
-entity: sensor.local_forecast
-detail_entity: sensor.local_forecast_zambretti_detail
-pressure_change_entity: sensor.local_forecast_pressurechange
+entity: sensor.barocast_forecast
+detail_entity: sensor.barocast_forecast_zambretti_detail
+pressure_change_entity: sensor.barocast_forecast_pressure_change
 icon_now: mdi:weather-cloudy-clock
 ```
 
